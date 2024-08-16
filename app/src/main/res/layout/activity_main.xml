@@ -29,14 +29,14 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
         android:ems="10"
-        android:hint=" Enter URL Link"
+        android:hint="@string/enter_url_link"
         android:inputType="text"
         android:paddingStart="7dp"
         app:layout_constraintEnd_toStartOf="@+id/brows"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="Autofill,MissingConstraints,RtlSymmetry" />
 
     <Button
         android:id="@+id/brows"
@@ -61,6 +61,23 @@
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/phonetext"
+        android:layout_width="191dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="@string/enter_phone_no"
+        android:inputType="phone"
+        android:paddingStart="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/call"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/urltext"
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/call"
@@ -164,24 +181,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:layout_marginEnd="10dp"
+        android:autofillHints=""
         android:text="@string/alarm"
         app:iconSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/camera" />
 
-    <EditText
-        android:id="@+id/phonetext"
-        android:layout_width="191dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:hint="@string/enter_phone_no"
-        android:inputType="phone"
-        android:paddingStart="13dp"
-        app:layout_constraintEnd_toStartOf="@+id/call"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/urltext" />
 </androidx.constraintlayout.widget.ConstraintLayout>

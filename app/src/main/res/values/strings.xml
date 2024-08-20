@@ -14,4 +14,6 @@
     <string name="gallery_">Gallery :</string>
     <string name="camera_">Camera :</string>
     <string name="alarm_">Alarm :</string>
+    <string name="login">Login :</string>
+    <string name="loginbtn">Login</string>
 </resources>

@@ -74,5 +74,11 @@ class MainActivity : AppCompatActivity() {
             val alarmIntent = Intent(AlarmClock.ACTION_SHOW_ALARMS)
             startActivity(alarmIntent)
         }
+
+        val loginButton = findViewById<Button>(R.id.loginbtn)
+        loginButton.setOnClickListener {
+            val loginIntent = Intent(this, LoginActivity::class.java)
+            startActivity(loginIntent)
+        }
     }
 }

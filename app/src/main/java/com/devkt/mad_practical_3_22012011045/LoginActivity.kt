@@ -1,6 +1,7 @@
 package com.devkt.mad_practical_3_22012011045
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -19,11 +20,13 @@ class LoginActivity: AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val email = intent.getStringExtra("email")
-        val pwd = intent.getStringExtra("password")
+        val email = intent.getStringExtra("email").toString()
+        val pwd = intent.getStringExtra("password").toString()
         val emailIp = findViewById<EditText>(R.id.emailinput)
         val pwdIp = findViewById<EditText>(R.id.pwdinput)
         val loginbtn = findViewById<Button>(R.id.loginbtn)
+        Log.i("email",email)
+        Log.i("pwd",pwd)
         loginbtn.setOnClickListener {
             val emailinput = emailIp.text.toString()
             val pwdinput = pwdIp.text.toString()

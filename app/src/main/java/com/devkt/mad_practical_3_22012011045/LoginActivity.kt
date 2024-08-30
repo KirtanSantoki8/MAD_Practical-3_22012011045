@@ -26,11 +26,11 @@ class LoginActivity: AppCompatActivity() {
         val loginbtn = findViewById<Button>(R.id.loginbtn)
         loginbtn.setOnClickListener {
             val emailinput = emailIp.text.toString()
+            val pwdinput = pwdIp.text.toString()
             if (emailinput.isBlank()) {
                 Toast.makeText(this, "Enter your email", Toast.LENGTH_SHORT).show()
             }
-            val pwdinput = pwdIp.text.toString()
-            if (pwdinput.isBlank()) {
+            else if (pwdinput.isBlank()) {
                 Toast.makeText(this, "Enter your password", Toast.LENGTH_SHORT).show()
             }
         }

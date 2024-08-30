@@ -78,11 +78,11 @@ class MainActivity : AppCompatActivity() {
         val loginButton = findViewById<Button>(R.id.loginbtn)
         loginButton.setOnClickListener {
             Intent(this, LoginActivity::class.java)
-            .putExtra("email","kirtansantoki12@gmail.com")
-            .putExtra("password","123456")
-            .also {
-                    startActivity(it)
-            }
+                .putExtra("email","kirtansantoki12@gmail.com")
+                .putExtra("password","123456")
+                .also {
+                        startActivity(it)
+                }
         }
     }
 }

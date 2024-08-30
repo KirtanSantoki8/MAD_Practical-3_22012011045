@@ -58,8 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         val galleryButton = findViewById<Button>(R.id.gallery)
         galleryButton.setOnClickListener {
-            val galleryIntent = Intent(Intent.ACTION_VIEW)
-            galleryIntent.type = "image/*"
+            val galleryIntent = Intent(Intent.ACTION_VIEW).setType("image/*")
             startActivity(galleryIntent)
         }
 

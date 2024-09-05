@@ -36,6 +36,9 @@ class LoginActivity: AppCompatActivity() {
             else if (pwdinput.isBlank()) {
                 Toast.makeText(this, "Enter your password", Toast.LENGTH_SHORT).show()
             }
+            else {
+                Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
